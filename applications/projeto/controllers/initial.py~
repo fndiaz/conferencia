@@ -1,0 +1,41 @@
+# coding: utf-8
+
+def teste():
+	print "Action index"
+	print request.args
+	print request.vars 	
+	print request.post_vars #somente entradas de formulário
+    	print request.get_vars  #somente entradas de url
+    	#nome = request.vars['nome']
+        mensagem = "Bem Vindo"
+        form = "<form action='' method='POST'><input name='nome' id='nome'/><input type='Submit'></form><br>"
+        if 'nome' in request.vars:
+		form = "<p>Bem vindo %(nome)s</p>" % request.vars + form		
+		#mensagem = mensagem + " usuário %(nome)s" % request.vars	#mostrando variavel da url
+        	#mensagem = mensagem + " usuário %s" %str(nome)			#mostrando uma variavel local    
+	return form
+
+def home():
+	return "Bem Vindo"
+
+def contact():
+	return "form"
+
+def about():
+	return "sobre"
+
+def user():
+	return "user"
+
+def download():
+	return "download"
+
+def teste2():
+	return "<form><label>Nome</label><input /></form><br><a href='http://www.w3schools.com'>Visit W3Schools</a>"
+	#return dict(nome="fernando")
+	#return response.render("teste.html", dict(nome="fernando"))
+
+def soma(x, y):
+	return x + y
+
+ 

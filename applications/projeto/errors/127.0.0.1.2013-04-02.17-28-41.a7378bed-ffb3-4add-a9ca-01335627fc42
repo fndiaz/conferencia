@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.IndexError'> list index out of range"
+p3
+sS'layer'
+p4
+S'/var/www/conferencia/applications/projeto/models/models.py'
+p5
+sS'code'
+p6
+S'user = db.define_table("usuario",\n      Field("nome", notnull=True, unique=True),\n      Field("pin"),\n      Field("email"),\n      #auth.signature\n      format="%(nome)s")\n\n\nmeetme = db.define_table("meetme",\n      Field("confno", notnull=True, unique=True),\n      primarykey=[\'accnum\'],\n      format="%(nome)s")\n\n\n\n\n\n\n\n\ndatetime'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/var/www/conferencia/gluon/restricted.py", line 212, in restricted\n    exec ccode in environment\n  File "/var/www/conferencia/applications/projeto/models/models.py", line 12, in <module>\n    format="%(nome)s")\n  File "/var/www/conferencia/gluon/dal.py", line 7186, in define_table\n    table = self.lazy_define_table(tablename,*fields,**args)\n  File "/var/www/conferencia/gluon/dal.py", line 7203, in lazy_define_table\n    table = table_class(self, tablename, *fields, **args)\n  File "/var/www/conferencia/gluon/dal.py", line 7558, in __init__\n    and f.name==self._primarykey[0]][0]\nIndexError: list index out of range\n'
+p11
+s.

@@ -1,0 +1,37 @@
+{{extend "plugin_layouts/layouts/Emporium.html"}}
+<h1><span style="color: black;"> This is Python</span>!</h1>
+<p>Please enter your first name, last name, and email address - thanks!</p>
+{{=form}}
+<br>
+<div class="well">
+<p>este é um box</p>
+Left: 5em; right: 0px 
+</div>
+
+<blockquote class="pull-right">
+<p>a essencia é o que nos move</p>
+</blockquote>
+
+<a class="btn btn-danger" href="http://google.com">Perigo</a>
+<a class="btn btn-success" href="http://google.com">Sucesso</a>
+<h1>aaa</h1>
+<table>
+        <tr>
+                <td>1
+                </td>
+                <td>2
+                </td>
+                <td>3
+                </td>
+                <td>4
+                </td>
+        </tr>
+        <tr>
+                <td>1
+                </td>
+                <td>2
+                </td>
+        </tr>
+</table>
+
+  

@@ -1,0 +1,108 @@
+2013-01-24 09:09:55,081 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:09:55,083 - web2py.app.blog - INFO - <Storage {'nome': 'fernadoou'}>
+2013-01-24 09:18:37,127 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:18:37,129 - web2py.app.blog - INFO - <Storage {}>
+2013-01-24 09:18:37,130 - web2py.app.blog - ERROR - integer division or modulo by zero
+2013-01-24 09:23:19,299 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:23:19,300 - web2py.app.blog - INFO - <Storage {}>
+2013-01-24 09:23:19,301 - web2py.app.blog - ERROR - integer division or modulo by zero
+2013-01-24 09:23:50,128 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:23:50,129 - web2py.app.blog - INFO - <Storage {}>
+2013-01-24 09:23:50,130 - web2py.app.blog - ERROR - integer division or modulo by zero
+2013-01-24 09:29:28,753 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:29:28,754 - web2py.app.blog - INFO - <Storage {}>
+2013-01-24 09:58:54,733 - web2py.app.blog - DEBUG - execute funcao add
+2013-01-24 09:58:54,734 - web2py.app.blog - INFO - <Storage {}>
+2013-01-24 10:01:33,498 - web2py.app.blog - INFO - <Row {'first_name': 'Fernando', 'last_name': 'Vieira', 'registration_id': '', 'email': 'fndiaz02@gmail.com', 'reset_password_key': '', 'registration_key': '', 'id': 1}>
+2013-01-24 10:01:45,768 - web2py.app.blog - INFO - <Row {'first_name': 'Fernando', 'last_name': 'Vieira', 'registration_id': '', 'email': 'fndiaz02@gmail.com', 'reset_password_key': '', 'registration_key': '', 'id': 1}>
+2013-01-24 10:07:57,332 - web2py.app.blog - INFO - <Row {'first_name': 'Fernando', 'last_name': 'Vieira', 'registration_id': '', 'email': 'fndiaz02@gmail.com', 'reset_password_key': '', 'registration_key': '', 'id': 1}>
+2013-01-24 10:07:57,334 - web2py.app.blog - INFO - 1
+2013-01-24 10:08:04,647 - web2py.app.blog - INFO - <Row {'first_name': 'Fernando', 'last_name': 'Vieira', 'registration_id': '', 'email': 'fndiaz02@gmail.com', 'reset_password_key': '', 'registration_key': '', 'id': 1}>
+2013-01-24 10:08:04,650 - web2py.app.blog - INFO - 1
+2013-01-24 10:28:16,088 - web2py.app.blog - INFO - <Row {'first_name': 'Fernando', 'last_name': 'Vieira', 'registration_id': '', 'email': 'fndiaz02@gmail.com', 'reset_password_key': '', 'registration_key': '', 'id': 1}>
+2013-01-24 10:28:16,089 - web2py.app.blog - INFO - 1
+2013-01-24 15:23:05,020 - web2py.app.blog - INFO - notifica
+2013-01-24 15:28:58,028 - web2py.app.blog - INFO - notifica
+2013-01-24 16:49:32,489 - web2py.app.blog - INFO - notifica
+2013-01-24 16:53:38,352 - web2py.app.blog - INFO - <Row {'bio': None, 'first_name': 'Dend', 'last_name': 'delkson', 'photo': 'auth_user.photo.852c1e9d624a7670.746563686e6f6c6f676965735f7068702e706e67.png', 'registration_id': '', 'email': 'fernando@ad2.com.br', 'reset_password_key': '', 'gender': 'masculino', 'registration_key': '', 'id': 5}>
+2013-01-24 16:53:38,354 - web2py.app.blog - INFO - 5
+2013-01-26 18:55:18,224 - web2py.rewrite - ERROR - /var/www/web2py_curso/routes.py has a syntax error and will not be loaded
+Traceback (most recent call last):
+  File "/var/www/web2py_curso/gluon/rewrite.py", line 327, in load
+    exec (data + '\n') in symbols
+  File "<string>", line 15
+    
+   ^
+SyntaxError: invalid syntax
+
+2013-01-26 18:55:22,984 - web2py.rewrite - ERROR - /var/www/web2py_curso/routes.py has a syntax error and will not be loaded
+Traceback (most recent call last):
+  File "/var/www/web2py_curso/gluon/rewrite.py", line 327, in load
+    exec (data + '\n') in symbols
+  File "<string>", line 15
+    
+   ^
+SyntaxError: invalid syntax
+
+2013-01-28 10:13:01,583 - web2py.app.blog - INFO - <Row {'bio': None, 'first_name': 'Dend', 'last_name': 'delkson', 'photo': 'auth_user.photo.852c1e9d624a7670.746563686e6f6c6f676965735f7068702e706e67.png', 'registration_id': '', 'email': 'fernando@ad2.com.br', 'reset_password_key': '', 'gender': 'masculino', 'registration_key': '', 'id': 5}>
+2013-01-28 10:13:01,586 - web2py.app.blog - INFO - 5
+2013-02-01 16:55:03,972 - Rocket.Errors.Port8000 - ERROR - Socket 127.0.0.1:8000 in use by other process and it won't share.
+2013-02-01 16:55:07,047 - Rocket.Errors.Port8000 - WARNING - Listener started when not ready.
+2013-02-01 16:55:18,161 - Rocket.Errors.Port8000 - ERROR - Socket 127.0.0.1:8000 in use by other process and it won't share.
+2013-02-01 16:55:24,458 - Rocket.Errors.Port8000 - WARNING - Listener started when not ready.
+2013-02-01 17:02:08,920 - web2py.app.blog - INFO - notifica
+2013-02-05 20:35:24,520 - web2py - ERROR - Traceback (most recent call last):
+  File "/var/www/web2py_hosts/gluon/main.py", line 417, in wsgibase
+    (static_file, version, environ) = url_in(request, environ)
+  File "/var/www/web2py_hosts/gluon/rewrite.py", line 189, in url_in
+    return map_url_in(request, environ)
+  File "/var/www/web2py_hosts/gluon/rewrite.py", line 1331, in map_url_in
+    static_file, version = map.map_static()
+  File "/var/www/web2py_hosts/gluon/rewrite.py", line 997, in map_static
+    version = regex_version.match(self.args(0))
+TypeError: expected string or buffer
+
+2013-02-06 08:57:12,126 - web2py - WARNING - import IPython error; use default python shell
+2013-02-06 11:34:48,804 - web2py.rewrite - ERROR - /var/www/hosts3/routes.py has a syntax error and will not be loaded
+Traceback (most recent call last):
+  File "/var/www/hosts3/gluon/rewrite.py", line 327, in load
+    exec (data + '\n') in symbols
+  File "<string>", line 11
+SyntaxError: non-keyword arg after keyword arg
+
+2013-02-27 16:21:31,342 - Rocket.Errors.Port8000 - ERROR - Socket eth0:8000 in use by other process and it won't share.
+2013-02-27 16:21:36,606 - Rocket.Errors.Port8000 - WARNING - Listener started when not ready.
+2013-02-27 16:22:04,614 - Rocket.Errors.Port8000 - ERROR - Socket nterface=eth0:8000 in use by other process and it won't share.
+2013-02-27 16:22:07,888 - Rocket.Errors.Port8000 - WARNING - Listener started when not ready.
+2013-03-15 15:35:58,637 - web2py - ERROR - Traceback (most recent call last):
+  File "/var/www/hosts3/gluon/restricted.py", line 212, in restricted
+    exec ccode in environment
+  File "/var/www/hosts3/applications/projeto/views/initial/user.html", line 55, in <module>
+  File "/var/www/hosts3/gluon/globals.py", line 202, in write
+    self.body.write(xmlescape(data))
+  File "/var/www/hosts3/gluon/html.py", line 120, in xmlescape
+    return data.xml()
+  File "/var/www/hosts3/gluon/html.py", line 1494, in xml
+    return DIV.xml(self)
+  File "/var/www/hosts3/gluon/html.py", line 914, in xml
+    (fa, co) = self._xml()
+  File "/var/www/hosts3/gluon/html.py", line 905, in _xml
+    self.components])
+  File "/var/www/hosts3/gluon/html.py", line 120, in xmlescape
+    return data.xml()
+  File "/var/www/hosts3/gluon/languages.py", line 409, in xml
+    return str(self) if self.M else escape(str(self))
+  File "/var/www/hosts3/gluon/languages.py", line 369, in __str__
+    self.T.translate(self.m, self.s))
+  File "/var/www/hosts3/gluon/languages.py", line 886, in translate
+    message = self.params_substitution(message, symbols)
+  File "/var/www/hosts3/gluon/languages.py", line 863, in params_substitution
+    message = message % symbols
+TypeError: not all arguments converted during string formatting
+
+2013-03-28 15:22:34,522 - web2py - WARNING - Mail.send failure:[Errno 110] Connection timed out
+2013-03-28 15:28:26,906 - web2py - WARNING - Mail.send failure:[Errno 110] Connection timed out
+2013-03-28 15:32:06,810 - web2py - WARNING - Mail.send failure:[Errno 110] Connection timed out
+2013-03-28 15:36:33,562 - web2py - WARNING - Mail.send failure:[Errno 110] Connection timed out
+2013-03-28 15:38:51,674 - web2py - WARNING - Mail.send failure:[Errno 110] Connection timed out
+2013-04-01 15:11:55,386 - web2py - WARNING - Mail.send failure:[Errno -2] Name or service not known
