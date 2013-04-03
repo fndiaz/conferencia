@@ -7,12 +7,20 @@ usuario = db.define_table("usuario",
 
 
 meetme = db.define_table("meetme",
-      Field("confno", notnull=True, unique=True),
+      Field("confno", 'id'), 
       Field("starttime", "datetime"),
       Field("endtime", "datetime"),
       Field("membros_user", 'list:reference usuario'),
-      primarykey=['confno']
+      Field("admin_user", 'list:reference usuario'),
+      Field('gravacao', "boolean"),
+      #primarykey=['confno']
       )
 
+
+meetme.confno.label = 'Sala'
+meetme.starttime.label = 'Início'
+meetme.endtime.label = "Fim"
+meetme.membros_user.label = "Membros"
+meetme.admin_user.label = "Admins"
 
 

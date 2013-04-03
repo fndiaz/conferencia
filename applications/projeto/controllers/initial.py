@@ -2,32 +2,38 @@
 
 def show_cliente():
 	response.title="Eventos"
+	print request.now
 
-	grid = SQLFORM.grid(db.meetme,
+
+
+
+	grid = SQLFORM.grid(db.meetme, orderby=db.meetme.endtime,
+		user_signature=False, searchable=True, csv=False, 
+		paginate=50, details=False,  
+		ignore_rw = True, maxtextlength=36,
+		links=[lambda row: A('Editar', 
+    		      _class='btn', 
+    		      _title='Editar', 
+    		      _href=URL("initial", "/edit_host", 
+    		      vars=dict(f=row.confno)))] 
+    	)
+	return response.render("initial/show_grid.html", grid=grid)
+
+def show_servidor():
+	response.title="Eventos"
+	data = request.now
+
+	query=(db.meetme.endtime > '2013-04-03 09:38:17.902532') 
+	query2=('SELECT * from meetme order by id desc LIMIT 4;')
+	print query
+
+	grid = SQLFORM.grid(query=query, orderby=db.meetme.endtime,
 		user_signature=False, searchable=True, csv=False, 
 		paginate=50, details=False,  
 		ignore_rw = True, maxtextlength=36, 
     	)
 	return response.render("initial/show_grid.html", grid=grid)
 
-@auth.requires_login()
-def show_servidor():
-	response.title="Servidores"
-
-	db.args=Servidor.id.readable=False
-	grid = SQLFORM.grid(Servidor,
-		user_signature=True, searchable=True, csv=False,
-		paginate=50, details=False, 
-		ignore_rw = True, maxtextlength=26,
-		create=auth.has_membership("admin"),
-		editable=auth.has_membership("admin"),
-		deletable=auth.has_membership("admin"),  
-    	links = [lambda row: A('hosts', _class='btn', 
-    		_title='ver servidores', 
-    		_href=URL("initial", "/servidor_host", 
-    		vars=dict(f=row.id, n1='Servidores', p1='show_servidor')))]
-		)
-	return response.render("initial/show_grid.html", grid=grid)
 
 @auth.requires_login()
 def show_distro():
@@ -208,15 +214,7 @@ def detalhes_nav():
 
 
 def edit_host():
-    form = SQLFORM(db.hosts, request.vars['f'], submit_button='Editar', fields = ['id_cliente', 'id_servidor', 'id_distro', 'servicos',
-				'if1', 'ip1', 'masc1', 'obs1', 'if2', 'ip2', 'masc2', 'obs2',
-				'if3', 'ip3', 'masc3', 'obs3', 'if4', 'ip4', 'masc4', 'obs4',
-				'nome', 'ip_chegada', 'porta_ssh', 'gateway', 'rotas', 'obs_gerais'],
-				labels = {'id_cliente':'Cliente', 'id_servidor':'Servidor', 'id_distro':'Distro',
-				'if1':'Interface 1', 'ip1':'IP', 'masc1':'Máscara', 'obs1':'Obs',
-				'if2':'Interface 2', 'ip2':'IP', 'masc2':'Máscara', 'obs2':'Obs',
-				'if3':'Interface 3', 'ip3':'IP', 'masc3':'Máscara', 'obs3':'Obs',
-				'if4':'Interface 4', 'ip4':'IP', 'masc4':'Máscara', 'obs4':'Obs'})
+    form = SQLFORM(db.meetme, request.vars['f'], submit_button='Editar')
 
     if form.process().accepted:
        response.flash = 'Editado com sucesso'
@@ -225,9 +223,7 @@ def edit_host():
     else:
        response.flash = 'Edite os dados do host'
 
-    return response.render("initial/show_form.html", form=form, id_cliente = request.vars['c'], 
-    				nome_ant = request.vars['n'], nome_ant1 = request.vars['n1'], 
-    				funcao_ant = request.vars['p'], funcao_ant1 = request.vars['p1'])
+    return response.render("initial/show_form2.html", form=form)
 
 
 @auth.requires_login()
